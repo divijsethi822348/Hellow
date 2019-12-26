@@ -18,12 +18,10 @@ import java.util.List;
 public class SavedPaymentMethodsRecyclerAdapter extends RecyclerView.Adapter<SavedPaymentMethodsRecyclerAdapter.Holder> {
 
     Context context;
-    List<PaymentModel> pay_list;
 
 
-    public SavedPaymentMethodsRecyclerAdapter(Context context, List<PaymentModel> pay_list) {
+    public SavedPaymentMethodsRecyclerAdapter(Context context) {
         this.context = context;
-        this.pay_list = pay_list;
     }
 
     @NonNull
@@ -35,15 +33,12 @@ public class SavedPaymentMethodsRecyclerAdapter extends RecyclerView.Adapter<Sav
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
-        holder.payment_image.setImageDrawable(pay_list.get(position).getPay_image());
-        holder.payment_text.setText(pay_list.get(position).getPay_text().toString());
-
 
     }
 
     @Override
     public int getItemCount() {
-        return pay_list.size();
+        return 3;
     }
 
     public class Holder extends RecyclerView.ViewHolder {

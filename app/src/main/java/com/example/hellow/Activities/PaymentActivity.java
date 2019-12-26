@@ -25,7 +25,6 @@ public class PaymentActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         saved_payment=findViewById(R.id.saved_payment_recycler);
         saved_payment.setLayoutManager(new LinearLayoutManager(this));
-        PaymentModel model=new PaymentModel(, "Paytm(120.00)")
 
         saved_payment.setAdapter(new SavedPaymentMethodsRecyclerAdapter(this));
     }
