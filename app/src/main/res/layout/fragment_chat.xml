@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ChatFragment"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/menu"
+        android:src="@drawable/menu"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="2dp"
+        android:src="@drawable/search"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/menu"
+        android:text="Hellow"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/signika" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="-40dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Chats"
+                android:fontFamily="@font/signika"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/my_chats_recycler"
+                android:layout_marginBottom="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    
+
+</RelativeLayout>

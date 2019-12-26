@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background"
+    tools:context=".Activities.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow"
+            android:id="@+id/back"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/back"
+            android:src="@drawable/user"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:id="@+id/user_pic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amanda"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/user_pic"
+            android:id="@+id/user_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/signika"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu"
+            android:padding="5dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/attach_chat_background"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:id="@+id/attach_file">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/contacts"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/maps"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/photo_camera"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/photos"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/get_otp_backgroud_unfaded"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/login_button_background">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hi_image"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/send_hi"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/attach"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:id="@+id/attach"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/attach"
+                android:layout_toRightOf="@id/send_hi"
+                android:hint="Type Something..."
+                android:backgroundTint="@color/white"
+                />
+            
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

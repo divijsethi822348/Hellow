@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/payment_image"
+        android:src="@drawable/paytm"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paytm(120.00)"
+        android:textColor="#474646"
+        android:id="@+id/payment_text"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/payment_image"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/signika"
+        android:textSize="20dp"/>
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:src="@drawable/grey_options"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#474646"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

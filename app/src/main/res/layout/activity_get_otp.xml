@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.GetOtpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/signika"
+        android:text="Hellow"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:id="@+id/hellow_login"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/faded_background"
+        android:layout_below="@+id/hellow_login"
+        android:layout_marginTop="150dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/signika"
+            android:textColor="#535252"
+            android:text="Hey, welcome back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="22dp"
+            android:id="@+id/welcome"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/welcome"
+            android:background="@drawable/login_button_background"
+            android:layout_marginTop="15dp"
+            android:id="@+id/number">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:fontFamily="@font/signika"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/get_otp_button"
+            android:background="@drawable/get_otp_backgroud_unfaded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:text="Get OTP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/signika"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/get_otp_button"
+            android:layout_marginTop="10dp"
+            android:background="#858383"
+            android:id="@+id/view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/view"
+            android:textStyle="bold"
+            android:fontFamily="@font/signika"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/dont"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:layout_toRightOf="@+id/dont"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/view"
+            android:textStyle="bold"
+            android:id="@+id/create_account"
+            android:fontFamily="@font/signika"
+            android:layout_marginLeft="3dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

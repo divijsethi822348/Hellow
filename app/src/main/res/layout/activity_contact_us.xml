@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.ContactUsActivity">
+
+    <ImageView
+        android:id="@+id/back_contact"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/back" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/back_contact"
+        android:text="Contact Us"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/signika" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back_contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-30dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#D0DAE2"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="170dp"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="30dp"
+               android:id="@+id/describe_problem">
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textMultiLine"
+                   android:hint="Describe your problem"
+                   android:fontFamily="@font/signika"
+                   android:layout_margin="10dp"
+                   android:textColor="#474646"
+                   android:backgroundTint="@color/white"/>
+
+
+           </androidx.cardview.widget.CardView>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#474646"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/describe_problem"
+               android:text="Add Screenshots (Optional)"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/colorAccent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Proceed"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/signika"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
