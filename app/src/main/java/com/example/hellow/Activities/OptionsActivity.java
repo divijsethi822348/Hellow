@@ -34,19 +34,19 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void setIds() {
-        profile=findViewById(R.id.profile_options);
-        settings=findViewById(R.id.settings_options);
-        refer=findViewById(R.id.refer_earn_options);
-        contact=findViewById(R.id.contact_options);
-        feedback=findViewById(R.id.feedback_options);
-        faq=findViewById(R.id.faq_options);
+        profile = findViewById(R.id.profile_options);
+        settings = findViewById(R.id.settings_options);
+        refer = findViewById(R.id.refer_earn_options);
+        contact = findViewById(R.id.contact_options);
+        feedback = findViewById(R.id.feedback_options);
+        faq = findViewById(R.id.faq_options);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.profile_options:
-                startActivity(new Intent(this,MyProfileActivity.class));
+                startActivity(new Intent(this, MyProfileActivity.class));
                 break;
 
             case R.id.settings_options:
@@ -60,6 +60,12 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.refer_earn_options:
                 startActivity(new Intent(this, ReferEarnActivity.class));
                 break;
+
+            case R.id.feedback_options:
+                startActivity(new Intent(this, FeedbackActivity.class));
+                break;
+
+
         }
     }
 }
